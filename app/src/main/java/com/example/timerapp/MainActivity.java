@@ -42,15 +42,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }.start();
             seekBar.setEnabled(false);
-//            seekBar.getThumb().setTint();
-//            seekBar.getBackground().setTint(808080);
         } else{
             String goText = "Go!";
             timerButton.setText(goText.toCharArray(), 0, goText.length());
             countDownTimer.cancel();
             seekBar.setEnabled(true);
-//            seekBar.getThumb().setColorFilter(0xE91E63, PorterDuff.Mode.MULTIPLY);
-//            seekBar.getBackground().setColorFilter(0xE91E63, PorterDuff.Mode.MULTIPLY);
         }
     }
 
@@ -107,17 +103,3 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("We're done!", "No more countdown");
             }
         }.start();
-
-//        Handler handler = new Handler();
-//        Runnable run = new Runnable() {
-//            @Override
-//            public void run() {
-//                Log.i("Yoooo", "A second passed!");
-//
-//                handler.postDelayed(this, 1000);
-//            }
-//        };
-//
-//        handler.post(run);
-    }
-}
